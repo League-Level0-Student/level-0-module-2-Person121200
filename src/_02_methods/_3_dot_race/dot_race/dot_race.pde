@@ -2,6 +2,7 @@
      that travels across the screen when the mouse is pressed.
 ***/
 
+import ddf.minim.*;
   /***********  SOUND ***************
    * Some computers are unable to play sounds. 
    * If you cannot play sound on this computer, set canPlaySounds to false.
@@ -23,10 +24,13 @@ void draw() {
 	background(200,200,200);
  
     //2. Draw an ellipse of height and width 50. Make sure to use the x variable for its X position. 
-    ellipse(x, 100, 50, 50);
+     ellipse(x, 100, 50, 50);
     fill(#a83232);
     if (mousePressed){
-     
+     x+=10;
+    }
+    if(x >= 800) {
+      playSound();
     }
     //   Pick a y value that places it half way down the window.
       
@@ -43,8 +47,8 @@ void draw() {
 
 }
 
-/*
-import ddf.minim.*;
+
+
 boolean soundPlayed = false;
 void playSound() {
   
@@ -60,4 +64,3 @@ void playSound() {
   textSize(36);
   text("WINNER!!", width/2, height/2);
 }
-*/
