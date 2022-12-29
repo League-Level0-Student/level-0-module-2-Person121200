@@ -26,6 +26,9 @@ public class AnimalFarm {
 	
 	void animals() {
 		String input = JOptionPane.showInputDialog(null, "Which animal would you like to hear and see? ");
+		if (input == "cow") {
+			moo();
+		}
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 

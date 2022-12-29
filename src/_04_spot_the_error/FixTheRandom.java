@@ -9,10 +9,11 @@ public class FixTheRandom {
 	// Change ONE line of code to fix this program.
 	
 	public static void main(String[] args) {
-		
+	
 		Random random = new Random();
-		
-		int numnber = random.nextInt(5);
+		for (int i = 0; i<6; i++) {
+		int numnber = random.nextInt(10);
+	
 		
 		if (numnber == 5) {
 			System.out.println("FIVE");
@@ -27,7 +28,9 @@ public class FixTheRandom {
 		} else if (numnber == 10) {
 			System.out.println("TEN");
 		}
+		}
 	}
-	
-	
 }
+	
+	
+
