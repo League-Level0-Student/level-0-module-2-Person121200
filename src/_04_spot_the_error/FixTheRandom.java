@@ -10,9 +10,8 @@ public class FixTheRandom {
 	
 	public static void main(String[] args) {
 	
-		Random random = new Random();
-		for (int i = 0; i<6; i++) {
-		int numnber = random.nextInt(10);
+		Random random = new Random(); 
+		int numnber = random.nextInt(6)+5;
 	
 		
 		if (numnber == 5) {
@@ -28,9 +27,7 @@ public class FixTheRandom {
 		} else if (numnber == 10) {
 			System.out.println("TEN");
 		}
-		}
 	}
 }
-	
 	
 
